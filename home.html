@@ -1,0 +1,91 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feliz Dia dos Namorados!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <audio
+      id="audioContinuar"
+      src="assets/audios/The Weeknd - I Feel It Coming ft. Daft Punk (Official Video).mp3"
+    ></audio>
+  </head>
+  <body>
+    <header class="header">
+      <img src="assets/images/logo.png" alt="Logo" class="logo" />
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Séries</a></li>
+          <li><a href="#">Filmes</a></li>
+          <li><a href="#">Minha Lista</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="description-container">
+        <div class="description-bg"></div>
+        <div class="description">
+          <h1>Luan e Daniela</h1>
+          <p class="meta">
+            11 de Julho, ♾️ Temporadas <span class="rating">★★★★★</span>
+          </p>
+          <p>
+            Em 2018 um jovem estudante inicia sua jornada em seu curso técnico,
+            o que ele não sabe, é que seu grande amor está mais perto do que ele
+            imagina. <br /><br />Bem amor, essa história nós ja sabemos o
+            início, tudo o que aconteceu depois eu viveria cada momento mais uma
+            vez, apesar de brigas e momentos ruins, aprender e evoluir junto à
+            você é um dos maiores prazeres que tenho nessa vida. Eu com toda
+            certeza do mundo não sou mais a mesma pessoa, sua presença mudou meu
+            jeito de sentir, ver e lidar com as coisas, e pela primeira vez eu
+            sinto que eu tenho alguém que eu possa me confortar, me apoiar e
+            principalmente me reerguer. Você é uma mulher incrível, me desculpe
+            por todas as vezes que te desapontei, eu jamais pensei em te magoar,
+            todas as vezes que errei, se eu tivesse a oportunidade de refazer
+            tudo da melhor maneira, eu faria, porque voce merece. Eu quero que
+            voce seja a mulher que eu sempre verei ao abrir meus olhos, quero
+            que seja a mulher que meus filhos chame de mamãe, quero que você
+            seja a mulher da minha vida, porque dos meus sonhos você já é. Você
+            é a prova mais forte de Deus em minha vida, eu te amo!❤️ Feliz dia
+            dos namorados meu bem!!
+          </p>
+          <div class="buttons">
+            <button onclick="continuar()">▶ Continuar</button>
+            <button onclick="favorito()">❤ Favorito</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="momentos">
+      <h2>Nossos Melhores Momentos</h2>
+      <div class="momentos-grid">
+        <img src="assets/images/momento1.jpg" alt="Momento 1" />
+        <img src="assets/images/momento2.jpg" alt="Momento 2" />
+        <img src="assets/images/momento3.jpeg" alt="Momento 3" />
+        <img src="assets/images/momento4.jpeg" alt="Momento 4" />
+        <img src="assets/images/momento5.jpg" alt="Momento 5" />
+        <img src="assets/images/momento6.jpeg" alt="Momento 6" />
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const botaoContinuar = document.querySelector(".buttons button");
+        const audio = document.getElementById("audioContinuar");
+
+        if (botaoContinuar && audio) {
+          botaoContinuar.addEventListener("click", () => {
+            audio.currentTime = 0;
+            audio.play();
+          });
+        }
+      });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

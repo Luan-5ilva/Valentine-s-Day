@@ -144,6 +144,12 @@ body {
     font-size: 2rem;
   }
 
+  .description p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: white;
+  }
+
   .meta {
     font-size: 0.9rem;
   }
