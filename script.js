@@ -1,8 +1,8 @@
 // script.js
 function continuar() {
-  alert("Continuando onde parou com muito amor! ❤️");
+  alert("Continuaremos como sempre, para sempre!❤️");
 }
 
 function favorito() {
-  alert("Adicionado aos favoritos do coração! 💖");
+  alert("Você sempre será minha história favorita 💖");
 }

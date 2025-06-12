@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Feliz Dia dos Namorados!</title>
     <link rel="stylesheet" href="styles.css" />
+    <audio
+      id="audioContinuar"
+      src="assets/audios/The Weeknd - I Feel It Coming ft. Daft Punk (Official Video).mp3"
+    ></audio>
   </head>
   <body>
     <header class="header">
@@ -60,6 +64,20 @@
         <img src="assets/images/momento6.jpeg" alt="Momento 6" />
       </div>
     </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const botaoContinuar = document.querySelector(".buttons button");
+        const audio = document.getElementById("audioContinuar");
+
+        if (botaoContinuar && audio) {
+          botaoContinuar.addEventListener("click", () => {
+            audio.currentTime = 0;
+            audio.play();
+          });
+        }
+      });
+    </script>
 
     <script src="script.js"></script>
   </body>
