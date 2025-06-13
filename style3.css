@@ -24,7 +24,7 @@ body {
 
 /* Texto com digitação */
 .msg {
-  font-size: clamp(16px, 2.5vw, 28px); /* Responsivo */
+  font-size: 20px; /* Responsivo */
   color: #fff;
   border-right: 4px solid red;
   white-space: nowrap;
